@@ -1,0 +1,7 @@
+rvm_install_on_use_flag=1
+rvm_project_rvmrc=1
+rvm_gemset_create_on_use_flag=1
+rvm use jruby-1.6.5@vdc_jruby --create
+function jrails_debug {
+  jruby --debug `which rails` server --debug
+}
